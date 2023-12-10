@@ -11,6 +11,21 @@ export default function Home() {
     const handleInput = (e) => {
         setCopyInput(e.target.value);
     }
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+            if (window.scrollY > 200) { // Ajusta este valor según sea necesario
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', onScroll);
+
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
     const copyToClipboard = async () => {
         try {
             await navigator.clipboard.writeText(copyInput);
@@ -35,14 +50,15 @@ export default function Home() {
       <>
           <style jsx global>{`
             html {
-              background-color: ${darkMode ? '#1f2937' : '#fff'}; // fondo oscuro o claro
+              background-color: ${darkMode ? '#1f2937' : '#fff'}; 
             }
           `}</style>
     <Layout>
       <div className={'mx-auto max-w-3xl sticky top-0 z-10'}>
           <header className="w-full bottom-0 static flex justify-between items-center py-1 px-5 z-20 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-lg">
-              <div className="flex w-12 h-12 relative opacity-1 items-center bg-indigo-100  dark:bg-gray-700/60 rounded-full shadow-md border-4 border-white dark:border-gray-900/80">
-                  <p className="ml-14 font-semibold text-lg whitespace-nowrap text-slate-600 dark:text-slate-300">
+              <div className={`flex w-12 h-12 relative opacity-1 items-center bg-indigo-100 dark:bg-gray-700/60 rounded-full shadow-md border-4 border-white dark:border-gray-900/80 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+                  <Image className={'rounded-full'} src={'/img/pieromg.webp'} alt={'Imagen PIERO'} width={40} height={40}/>
+                  <p className="ml-4 font-semibold text-lg whitespace-nowrap text-slate-600 dark:text-slate-300">
                       Piero MG
                   </p>
               </div>
@@ -57,27 +73,29 @@ export default function Home() {
       </div>
         <main className={'flex flex-col gap-16'}>
             <section className={'flex flex-col md:flex-row gap-4 items-center'}>
-                <div>
-                    <Image src={'/img/perfil.jpeg'} width={100} height={100}/>
+                <div
+                    className="relative w-44 h-44 bg-indigo-100 dark:bg-gray-700/60 border-8 border-white dark:border-gray-900/80 shadow-lg rounded-full overflow-hidden">
+                    <Image className={'rounded-full'} src={'/img/pieromg.webp'} width={160} height={160}/>
                 </div>
-                <div className={'flex flex-col gap-2'}>
+            <div className={'flex flex-col gap-2'}>
 
-                    <h1 className={'text-2xl sm:text-4xl text-center sm:text-left font-bold text-slate-600 dark:text-slate-100'}>
-                        Piero MG
-                    </h1>
-                    <p className={'text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl'}>Im a passionate web development.</p>
-                    <div className="flex gap-3">
-                        <div className="relative group/tooltip">
-                            <div className="p-2.5 rounded-xl grid place-items-center bg-emerald-200 dark:bg-emerald-500">
-                                {
-                                    darkMode ? (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                             fill="#fff"
-                                             viewBox="0 0 512 512">
-                                            <path className="fa-primary"
-                                                  d="M331.2 146.9L322.7 96.24C321 86.05 324.3 75.66 331.6 68.36L382.8 17.16C390.1 9.036 404.7 11.86 409 22.53L432 80L489.5 102.1C500.1 107.3 502.1 121 494.8 129.2L443.6 180.4C436.3 187.7 425.9 190.1 415.8 189.3L365.1 180.8L272.1 272.1C263.6 282.3 248.4 282.3 239 272.1C229.7 263.6 229.7 248.4 239 239L331.2 146.9z"/>
-                                            <path className="fa-secondary opacity-40"
-                                                  d="M366.4 213.5L395 218.3C398.3 230.3 400 242.9 400 256C400 335.5 335.5 400 256 400C176.5 400 112 335.5 112 256C112 176.5 176.5 112 256 112C269.1 112 281.7 113.7 293.7 116.1L298.5 145.6L267.3 176.8C263.6 176.3 259.8 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336C300.2 336 336 300.2 336 255.1C336 252.2 335.7 248.4 335.2 244.7L366.4 213.5zM497.7 171.5C506.1 197.1 512 226.4 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C285.6 0 314 5.024 340.5 14.27L288.1 66.67C277.6 64.91 266.9 64 256 64C149.1 64 64 149.1 64 256C64 362 149.1 448 256 448C362 448 448 362 448 256C448 245.1 447.1 234.4 445.3 223.9L497.7 171.5z"/>
+                <h1 className={'text-2xl sm:text-4xl text-center sm:text-left font-bold text-slate-600 dark:text-slate-100'}>
+                    Piero MG
+                </h1>
+                <p className={'text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl'}>Im a
+                    passionate web development.</p>
+                <div className="flex gap-3">
+                    <div className="relative group/tooltip">
+                        <div className="p-2.5 rounded-xl grid place-items-center bg-emerald-200 dark:bg-emerald-500">
+                            {
+                                darkMode ? (
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                         fill="#fff"
+                                         viewBox="0 0 512 512">
+                                        <path className="fa-primary"
+                                              d="M331.2 146.9L322.7 96.24C321 86.05 324.3 75.66 331.6 68.36L382.8 17.16C390.1 9.036 404.7 11.86 409 22.53L432 80L489.5 102.1C500.1 107.3 502.1 121 494.8 129.2L443.6 180.4C436.3 187.7 425.9 190.1 415.8 189.3L365.1 180.8L272.1 272.1C263.6 282.3 248.4 282.3 239 272.1C229.7 263.6 229.7 248.4 239 239L331.2 146.9z"/>
+                                        <path className="fa-secondary opacity-40"
+                                              d="M366.4 213.5L395 218.3C398.3 230.3 400 242.9 400 256C400 335.5 335.5 400 256 400C176.5 400 112 335.5 112 256C112 176.5 176.5 112 256 112C269.1 112 281.7 113.7 293.7 116.1L298.5 145.6L267.3 176.8C263.6 176.3 259.8 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336C300.2 336 336 300.2 336 255.1C336 252.2 335.7 248.4 335.2 244.7L366.4 213.5zM497.7 171.5C506.1 197.1 512 226.4 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C285.6 0 314 5.024 340.5 14.27L288.1 66.67C277.6 64.91 266.9 64 256 64C149.1 64 64 149.1 64 256C64 362 149.1 448 256 448C362 448 448 362 448 256C448 245.1 447.1 234.4 445.3 223.9L497.7 171.5z"/>
                                         </svg>
                                     ): (
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
@@ -96,8 +114,8 @@ export default function Home() {
                             <span
                                 className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Looking for job</span>
                         </div>
-                        <button
-                            className="flex items-center text-sm gap-3 bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2 px-4 rounded-lg font-semibold">
+                        <a href="/PieroMarcos_CV2023.pdf" download="PieroMarcos_CV2023.pdf"
+                            className="flex items-center text-sm gap-2 bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2 px-4 rounded-lg font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
                                  viewBox="0 0 384 512">
                                 <path className="fa-primary "
@@ -105,7 +123,8 @@ export default function Home() {
                                 <path className="fa-secondary opacity-40"
                                       d="M256 128V0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V128H256zM192 192c35.35 0 64 28.66 64 64s-28.65 64-64 64c-35.34 0-64-28.66-64-64S156.7 192 192 192zM288 448H96c-8.836 0-16-7.164-16-16C80 387.8 115.8 352 160 352h64c44.18 0 80 35.81 80 80C304 440.8 296.8 448 288 448z"/>
                             </svg>
-                            Resume</button>
+                            Resume
+                        </a>
                     </div>
                 </div>
             </section>
