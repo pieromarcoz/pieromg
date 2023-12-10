@@ -181,7 +181,8 @@ export default function Home() {
                 <div className="flex flex-col gap-10">
                     <div className="grid gap-10">
                         <article className="grid gap-4 sm:gap-7 md:grid-cols-2 group">
-                            <a href="https://velvety-daifuku-ad4dfc.netlify.app/" target="_blank" rel="noreferrer" className="block">
+                            <a href="https://velvety-daifuku-ad4dfc.netlify.app/" target="_blank" rel="noreferrer"
+                               className="block">
                                 {/*<div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
                                     <Image src={'/img/landing-tesla.png'} width={350} height={225} alt={"Landing Tesla"}/>
                                 </div>*/}
@@ -189,21 +190,26 @@ export default function Home() {
                                     className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
                                     <span>
                                         <Image
-                                        alt={"Landing Tesla"}
-                                        src="/img/landing-tesla.png"
-                                        width={350}
-                                        height={225}
-                                        className="rounded-lg duration-500 transition-all translate-x-9 translate-y-9 group-hover:translate-x-7 group-hover:translate-y-7 "/>
+                                            alt={"Landing Tesla"}
+                                            src="/img/landing-tesla.png"
+                                            width={350}
+                                            height={225}
+                                            className="rounded-lg duration-500 transition-all translate-x-9 translate-y-9 group-hover:translate-x-7 group-hover:translate-y-7 "/>
                                     </span>
                                 </div>
                             </a>
                             <div className="flex flex-col gap-2.5 justify-center">
                                 <h3 className="font-bold text-3xl text-slate-800 dark:text-white">Tesla Landing</h3>
                                 <p className="text-slate-600 dark:text-slate-300 text-lg line-clamp-3">
-                                    He desarrollado una réplica de la página de inicio de Tesla en la que he implementado características avanzadas de diseño y navegación.
-                                    Mediante el uso de la tecnología Intersection Observer, logré un efecto dinámico en el color de la tipografía de la barra de navegación,
-                                    adaptándolo según la sección que está visible en la pantalla. Además, para una experiencia de desplazamiento suave y centrada, he empleado la propiedad CSS scroll-snap-type en los sliders,
-                                    asegurando que las transiciones entre imágenes sean precisas y atractivas a medida que los usuarios navegan a través del contenido destacado.
+                                    He desarrollado una réplica de la página de inicio de Tesla en la que he
+                                    implementado características avanzadas de diseño y navegación.
+                                    Mediante el uso de la tecnología Intersection Observer, logré un efecto dinámico en
+                                    el color de la tipografía de la barra de navegación,
+                                    adaptándolo según la sección que está visible en la pantalla. Además, para una
+                                    experiencia de desplazamiento suave y centrada, he empleado la propiedad CSS
+                                    scroll-snap-type en los sliders,
+                                    asegurando que las transiciones entre imágenes sean precisas y atractivas a medida
+                                    que los usuarios navegan a través del contenido destacado.
                                 </p>
                                 <div className="flex gap-2 items-center mb-1">
                                     <div className="relative group/tooltip">
@@ -211,9 +217,14 @@ export default function Home() {
                                             className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Next.js</span>
                                     </div>
                                     <div className="relative group/tooltip">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 85 107" fill="none">
-                                            <path d="M27.5893 91.1365C22.7555 86.7178 21.3443 77.4335 23.3583 70.7072C26.8503 74.948 31.6888 76.2914 36.7005 77.0497C44.4374 78.2199 52.0358 77.7822 59.2231 74.2459C60.0453 73.841 60.8052 73.3027 61.7036 72.7574C62.378 74.714 62.5535 76.6892 62.3179 78.6996C61.7452 83.5957 59.3086 87.3778 55.4332 90.2448C53.8835 91.3916 52.2437 92.4167 50.6432 93.4979C45.7262 96.8213 44.3959 100.718 46.2435 106.386C46.2874 106.525 46.3267 106.663 46.426 107C43.9155 105.876 42.0817 104.24 40.6844 102.089C39.2086 99.8193 38.5065 97.3081 38.4696 94.5909C38.4511 93.2686 38.4511 91.9345 38.2733 90.6309C37.8391 87.4527 36.3471 86.0297 33.5364 85.9478C30.6518 85.8636 28.37 87.6469 27.7649 90.4554C27.7187 90.6707 27.6517 90.8837 27.5847 91.1341L27.5893 91.1365Z" fill="#17191E"/>
-                                            <path d="M0 69.5866C0 69.5866 14.3139 62.6137 28.6678 62.6137L39.4901 29.1204C39.8953 27.5007 41.0783 26.3999 42.4139 26.3999C43.7495 26.3999 44.9325 27.5007 45.3377 29.1204L56.1601 62.6137C73.1601 62.6137 84.8278 69.5866 84.8278 69.5866C84.8278 69.5866 60.5145 3.35233 60.467 3.21944C59.7692 1.2612 58.5911 0 57.0029 0H27.8274C26.2392 0 25.1087 1.2612 24.3634 3.21944C24.3108 3.34983 0 69.5866 0 69.5866Z" fill="#17191E"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                             viewBox="0 0 85 107" fill="none">
+                                            <path
+                                                d="M27.5893 91.1365C22.7555 86.7178 21.3443 77.4335 23.3583 70.7072C26.8503 74.948 31.6888 76.2914 36.7005 77.0497C44.4374 78.2199 52.0358 77.7822 59.2231 74.2459C60.0453 73.841 60.8052 73.3027 61.7036 72.7574C62.378 74.714 62.5535 76.6892 62.3179 78.6996C61.7452 83.5957 59.3086 87.3778 55.4332 90.2448C53.8835 91.3916 52.2437 92.4167 50.6432 93.4979C45.7262 96.8213 44.3959 100.718 46.2435 106.386C46.2874 106.525 46.3267 106.663 46.426 107C43.9155 105.876 42.0817 104.24 40.6844 102.089C39.2086 99.8193 38.5065 97.3081 38.4696 94.5909C38.4511 93.2686 38.4511 91.9345 38.2733 90.6309C37.8391 87.4527 36.3471 86.0297 33.5364 85.9478C30.6518 85.8636 28.37 87.6469 27.7649 90.4554C27.7187 90.6707 27.6517 90.8837 27.5847 91.1341L27.5893 91.1365Z"
+                                                fill="#17191E"/>
+                                            <path
+                                                d="M0 69.5866C0 69.5866 14.3139 62.6137 28.6678 62.6137L39.4901 29.1204C39.8953 27.5007 41.0783 26.3999 42.4139 26.3999C43.7495 26.3999 44.9325 27.5007 45.3377 29.1204L56.1601 62.6137C73.1601 62.6137 84.8278 69.5866 84.8278 69.5866C84.8278 69.5866 60.5145 3.35233 60.467 3.21944C59.7692 1.2612 58.5911 0 57.0029 0H27.8274C26.2392 0 25.1087 1.2612 24.3634 3.21944C24.3108 3.34983 0 69.5866 0 69.5866Z"
+                                                fill="#17191E"/>
                                         </svg>
                                         <span
                                             className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Astro</span>
@@ -231,19 +242,96 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="flex justify-start gap-3">
-                                    <a href="https://velvety-daifuku-ad4dfc.netlify.app/" target="_blank" rel="noreferrer"
+                                    <a href="https://velvety-daifuku-ad4dfc.netlify.app/" target="_blank"
+                                       rel="noreferrer"
                                        className="flex gap-3 group/live hover:gap-6 transition-[gap] items-center text-lg py-2 px-5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-lg">
                                         Live
-                                    <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                             fill="currentColor"
-                                             viewBox="0 0 640 512">
-                                            <path className="fa-primary"
-                                                  d="M256 96C273.7 96 288 110.3 288 128C288 145.7 273.7 160 256 160H160C106.1 160 64 202.1 64 256C64 309 106.1 352 160 352H256C273.7 352 288 366.3 288 384C288 401.7 273.7 416 256 416H160C71.63 416 0 344.4 0 256C0 167.6 71.63 96 160 96H256zM480 96C568.4 96 640 167.6 640 256C640 344.4 568.4 416 480 416H384C366.3 416 352 401.7 352 384C352 366.3 366.3 352 384 352H480C533 352 576 309 576 256C576 202.1 533 160 480 160H384C366.3 160 352 145.7 352 128C352 110.3 366.3 96 384 96H480z"/>
-                                            <path className="fa-secondary"
-                                                  d="M192 256C192 238.3 206.3 224 224 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H224C206.3 288 192 273.7 192 256z"/>
+                                        <div
+                                            className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                 fill="currentColor"
+                                                 viewBox="0 0 640 512">
+                                                <path className="fa-primary"
+                                                      d="M256 96C273.7 96 288 110.3 288 128C288 145.7 273.7 160 256 160H160C106.1 160 64 202.1 64 256C64 309 106.1 352 160 352H256C273.7 352 288 366.3 288 384C288 401.7 273.7 416 256 416H160C71.63 416 0 344.4 0 256C0 167.6 71.63 96 160 96H256zM480 96C568.4 96 640 167.6 640 256C640 344.4 568.4 416 480 416H384C366.3 416 352 401.7 352 384C352 366.3 366.3 352 384 352H480C533 352 576 309 576 256C576 202.1 533 160 480 160H384C366.3 160 352 145.7 352 128C352 110.3 366.3 96 384 96H480z"/>
+                                                <path className="fa-secondary"
+                                                      d="M192 256C192 238.3 206.3 224 224 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H224C206.3 288 192 273.7 192 256z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div className="grid gap-10">
+                        <article className="grid gap-4 sm:gap-7 md:grid-cols-2 group">
+                            <a href="https://phplaravel-1180651-4138879.cloudwaysapps.com/" target="_blank" rel="noreferrer"
+                               className="block">
+                                {/*<div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
+                                    <Image src={'/img/landing-tesla.png'} width={350} height={225} alt={"Landing Tesla"}/>
+                                </div>*/}
+                                <div
+                                    className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
+                                    <span>
+                                        <Image
+                                            alt={"Devstagram"}
+                                            src="/img/dev.png"
+                                            width={350}
+                                            height={225}
+                                            className="rounded-lg duration-500 transition-all translate-x-9 translate-y-9 group-hover:translate-x-7 group-hover:translate-y-7 "/>
+                                    </span>
+                                </div>
+                            </a>
+                            <div className="flex flex-col gap-2.5 justify-center">
+                                <h3 className="font-bold text-3xl text-slate-800 dark:text-white">Devstagram</h3>
+                                <p className="text-slate-600 dark:text-slate-300 text-lg line-clamp-3">
+                                    He desarrollado una aplicación que es un clon de Instagram, utilizando tecnologías modernas como Laravel, Tailwind CSS y Livewire.
+                                    Esta aplicación emula varias funcionalidades clave de Instagram, ofreciendo una experiencia de usuario interactiva y atractiva.
+                                </p>
+                                <div className="flex gap-2 items-center mb-1">
+                                    <div className="relative group/tooltip">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                             viewBox="0 0 50 52">
+                                            <path
+                                                d="M49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25c0 .286-.152.55-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 0 1 0 39.25V6.334c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216l17.62-10.144zM1.602 7.719v31.068L19.22 48.93v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-.002-21.481L4.965 9.654 1.602 7.72zm8.81-5.994L2.405 6.334l8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764l4.645-2.674V7.719l-3.363 1.936-4.646 2.675v20.096l3.364-1.937zM39.243 7.164l-8.006 4.609 8.006 4.609 8.005-4.61-8.005-4.608zm-.801 10.605l-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937v-9.124zM20.02 38.33l11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833 7.993 4.524z"
+                                                fill="#FF2D20" fill-rule="evenodd"/>
                                         </svg>
+                                        <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Laravel</span>
                                     </div>
+                                    <div className="relative group/tooltip">
+                                        <Image src="/img/livewire.png" alt={'Livewire'} width={22} height={22}/>
+                                        <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-['']
+                                            before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100
+                                            group-hover/tooltip:-translate-y-3">Livewire</span>
+                                    </div>
+                                    <div className="relative group/tooltip">
+                                        <svg width="22" height="22" viewBox="0 0 55 33" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" className="w-7 h-6">
+                                            <path
+                                                d="M27.5 0C20.1667 0 15.5833 3.66667 13.75 11C16.5 7.33333 19.7083 5.95833 23.375 6.875C25.4673 7.3975 26.9615 8.91458 28.6183 10.5967C31.3156 13.3329 34.4346 16.5 41.25 16.5C48.5833 16.5 53.1667 12.8333 55 5.5C52.25 9.16667 49.0417 10.5417 45.375 9.625C43.2827 9.1025 41.7885 7.58542 40.1317 5.90333C37.4367 3.16708 34.3177 0 27.5 0ZM13.75 16.5C6.41667 16.5 1.83333 20.1667 0 27.5C2.75 23.8333 5.95833 22.4583 9.625 23.375C11.7173 23.8975 13.2115 25.4146 14.8683 27.0967C17.5656 29.8329 20.6846 33 27.5 33C34.8333 33 39.4167 29.3333 41.25 22C38.5 25.6667 35.2917 27.0417 31.625 26.125C29.5327 25.6025 28.0385 24.0854 26.3817 22.4033C23.6867 19.6671 20.5677 16.5 13.75 16.5V16.5Z"
+                                                fill="#19B5B9"></path>
+                                        </svg>
+                                        <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Tailwind</span>
+                                    </div>
+                                </div>
+                                <div className="flex justify-start gap-3">
+                                    <a href="https://phplaravel-1180651-4138879.cloudwaysapps.com/" target="_blank"
+                                       rel="noreferrer"
+                                       className="flex gap-3 group/live hover:gap-6 transition-[gap] items-center text-lg py-2 px-5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-lg">
+                                        Live
+                                        <div
+                                            className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                 fill="currentColor"
+                                                 viewBox="0 0 640 512">
+                                                <path className="fa-primary"
+                                                      d="M256 96C273.7 96 288 110.3 288 128C288 145.7 273.7 160 256 160H160C106.1 160 64 202.1 64 256C64 309 106.1 352 160 352H256C273.7 352 288 366.3 288 384C288 401.7 273.7 416 256 416H160C71.63 416 0 344.4 0 256C0 167.6 71.63 96 160 96H256zM480 96C568.4 96 640 167.6 640 256C640 344.4 568.4 416 480 416H384C366.3 416 352 401.7 352 384C352 366.3 366.3 352 384 352H480C533 352 576 309 576 256C576 202.1 533 160 480 160H384C366.3 160 352 145.7 352 128C352 110.3 366.3 96 384 96H480z"/>
+                                                <path className="fa-secondary"
+                                                      d="M192 256C192 238.3 206.3 224 224 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H224C206.3 288 192 273.7 192 256z"/>
+                                            </svg>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -263,46 +351,72 @@ export default function Home() {
                     </svg>
                 </header>
                 <div className="flex flex-wrap gap-3">
-                    <a href="https://www.linkedin.com/in/eduardo-robles-9b0807205/" target="_blank" rel="noreferrer" className="flex items-center gap-3 font-bold px-4 h-16 rounded-xl border-[3px] hover:border-[7px] border-[#f0f0f0] shadow-lg hover:shadow-2xl transition-all duration-300 text-sky-600">
-                        <svg className={'text-2xl'} xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 448 512">
-                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    <a href="https://www.linkedin.com/in/piero-marcos-142796232/" target="_blank" rel="noreferrer"
+                       className="flex items-center gap-3 font-bold px-4 h-16 rounded-xl border-[3px] hover:border-[7px] border-[#f0f0f0] shadow-lg hover:shadow-2xl transition-all duration-300 text-sky-600">
+                        <svg className={'text-2xl'} xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                             fill="currentColor" viewBox="0 0 448 512">
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
                         </svg>
                         Linkedin
                     </a>
-                    <a href="https://github.com/edudotdev" target="_blank" rel="noreferrer" className="flex items-center gap-3 font-bold px-4 h-16 rounded-xl  border-[3px] hover:border-[7px] border-[#f0f0f0] shadow-lg hover:shadow-2xl transition-all duration-300 text-black/80 dark:text-white/80">
-                        <svg className={'text-2xl'} xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 496 512">
-                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    <a href="https://github.com/pieromarcoz/" target="_blank" rel="noreferrer"
+                       className="flex items-center gap-3 font-bold px-4 h-16 rounded-xl  border-[3px] hover:border-[7px] border-[#f0f0f0] shadow-lg hover:shadow-2xl transition-all duration-300 text-black/80 dark:text-white/80">
+                        <svg className={'text-2xl'} xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                             fill="currentColor" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>
                         Github
                     </a>
-                    <a href="https://twitter.com/edurl_dev" target="_blank" rel="noreferrer" className="flex items-center gap-3 font-bold px-4 h-16 rounded-xl  border-[3px] hover:border-[7px] border-[#f0f0f0] shadow-lg hover:shadow-2xl transition-all duration-300 text-blue-400">
-                        <svg className={'text-2xl'} xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>                        Twitter
+                    <a href="https://twitter.com/pieromg__" target="_blank" rel="noreferrer"
+                       className="flex items-center gap-3 font-bold px-4 h-16 rounded-xl  border-[3px] hover:border-[7px] border-[#f0f0f0] shadow-lg hover:shadow-2xl transition-all duration-300 text-blue-400">
+                        <svg className={'text-2xl'} xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                             fill="currentColor" viewBox="0 0 512 512">
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                        </svg>
+                        Twitter
                     </a>
                 </div>
             </section>
             <section className="w-full">
                 <header className="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
                     <h2>Email</h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 512 512">
-                        <path className="fa-primary" d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464z" />
-                        <path className="fa-secondary opacity-40" d="M19.2 150.4L236.8 313.6C248.2 322.1 263.8 322.1 275.2 313.6L492.8 150.4C504.9 141.3 512 127.1 512 112V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V112C0 127.1 7.113 141.3 19.2 150.4z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                         viewBox="0 0 512 512">
+                        <path className="fa-primary"
+                              d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464z"/>
+                        <path className="fa-secondary opacity-40"
+                              d="M19.2 150.4L236.8 313.6C248.2 322.1 263.8 322.1 275.2 313.6L492.8 150.4C504.9 141.3 512 127.1 512 112V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V112C0 127.1 7.113 141.3 19.2 150.4z"/>
                     </svg>
                 </header>
                 <div className="flex gap-2 mb-10">
-                    <input type="text" className="bg-black/5 dark:bg-white/5 w-full py-1.5 px-3 rounded-lg grid place-items-center text-slate-600 dark:text-slate-300" value={copyInput} data-listener-added_410e2e75="true" />
+                    <input type="text"
+                           className="bg-black/5 dark:bg-white/5 w-full py-1.5 px-3 rounded-lg grid place-items-center text-slate-600 dark:text-slate-300"
+                           value={copyInput} data-listener-added_410e2e75="true"/>
                     <div className="flex gap-2">
                         <div className="relative group/tooltip">
-                            <a href="mailto:pieromarcozgarces@gmail.com" target="_blank" rel="noreferrer" className="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 512 512">
-                                <path className="fa-primary" d="M383.1 255.1L77.03 286.4V225.6L383.1 255.1z" />
-                                <path className="fa-secondary opacity-40" d="M511.1 255.1c0 12.8-7.625 24.38-19.41 29.41L44.6 477.4c-4.062 1.75-8.344 2.594-12.59 2.594c-8.625 0-17.09-3.5-23.28-10.05c-9.219-9.766-11.34-24.25-5.344-36.27l73.66-147.3l306.1-30.37L77.03 225.6l-73.66-147.3C-2.623 66.3-.4982 51.81 8.72 42.05c9.25-9.766 23.56-12.75 35.87-7.453L492.6 226.6C504.4 231.6 511.1 243.2 511.1 255.1z" />
-                            </svg>
-                        </a><span className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Send me email</span>
+                            <a href="mailto:pieromarcozgarces@gmail.com" target="_blank" rel="noreferrer"
+                               className="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                     viewBox="0 0 512 512">
+                                    <path className="fa-primary" d="M383.1 255.1L77.03 286.4V225.6L383.1 255.1z"/>
+                                    <path className="fa-secondary opacity-40"
+                                          d="M511.1 255.1c0 12.8-7.625 24.38-19.41 29.41L44.6 477.4c-4.062 1.75-8.344 2.594-12.59 2.594c-8.625 0-17.09-3.5-23.28-10.05c-9.219-9.766-11.34-24.25-5.344-36.27l73.66-147.3l306.1-30.37L77.03 225.6l-73.66-147.3C-2.623 66.3-.4982 51.81 8.72 42.05c9.25-9.766 23.56-12.75 35.87-7.453L492.6 226.6C504.4 231.6 511.1 243.2 511.1 255.1z"/>
+                                </svg>
+                            </a><span
+                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Send me email</span>
                         </div>
                         <div className="relative group/tooltip">
-                            <button onClick={copyToClipboard} className="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 512 512">
-                                    <path className="fa-primary" d="M192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352zM416 0v96h96L416 0z" />
-                                    <path className="fa-secondary opacity-40" d="M512 96v240c0 26.51-21.49 48-48 48h-192c-26.51 0-48-21.49-48-48v-288c0-26.51 21.49-48 48-48H416v96H512z" />
+                            <button onClick={copyToClipboard}
+                                    className="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                     viewBox="0 0 512 512">
+                                    <path className="fa-primary"
+                                          d="M192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352zM416 0v96h96L416 0z"/>
+                                    <path className="fa-secondary opacity-40"
+                                          d="M512 96v240c0 26.51-21.49 48-48 48h-192c-26.51 0-48-21.49-48-48v-288c0-26.51 21.49-48 48-48H416v96H512z" />
                                 </svg>
                             </button>
                             <span className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-['']
