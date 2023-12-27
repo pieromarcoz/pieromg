@@ -84,7 +84,7 @@ export default function Home() {
                 </h1>
                 <p className={'text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl'}>Im a
                     passionate web development.</p>
-                <div className="flex gap-3">
+                <div className="flex gap-3 justify-center sm:justify-start">
                     <div className="relative group/tooltip">
                         <div className="p-2.5 rounded-xl grid place-items-center bg-emerald-200 dark:bg-emerald-500">
                             {
@@ -114,7 +114,7 @@ export default function Home() {
                             <span
                                 className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Looking for job</span>
                         </div>
-                        <a href="/PieroMarcos_CV2023.pdf" download="PieroMarcos_CV2023.pdf"
+                        <a href="/PieroMG_CV.pdf" download="PieroMG_CV.pdf"
                             className="flex items-center text-sm gap-2 bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2 px-4 rounded-lg font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
                                  viewBox="0 0 384 512">
@@ -154,7 +154,7 @@ export default function Home() {
                     <div className="flex flex-col gap-5">
                         <div className="flex flex-col gap-1 ">
                             <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">Front-End Developer</h2>
-                            <p className="text-sm text-slate-500 dark:text-slate-400">Jun 2021 — Dec 2022</p>
+                            <p className="text-sm text-slate-500 dark:text-slate-400">Jun 2022 — Dec 2022</p>
                         </div>
                         <ul className="list-disc flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
                             <li>Administration Dashboard with React and NextJs for the management of patients,
@@ -171,6 +171,26 @@ export default function Home() {
                             </li>
                             <li>Administration Dashboard with React and NextJs for the management of patients,
                                 appointments, and services performed daily by a physiotherapy center.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr className="border border-dotted border-gray-300 dark:border-gray-600 rounded-md my-8"/>
+
+                <div className="flex flex-col gap-10">
+                    <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-1 ">
+                            <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">FullStack Developer • Grupo P</h2>
+                            <p className="text-sm text-slate-500 dark:text-slate-400">Feb 2023 — Present</p>
+                        </div>
+                        <ul className="list-disc flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
+                            <li>Developed landing pages using PHP, Tailwind, jQuery, MySQL, and Vanilla JavaScript, focusing on creating fast and responsive solutions that enhance user experience and optimize conversion rates.
+                            </li>
+                            <li>Created and customized websites using WordPress, Elementor, and Yoast SEO, ensuring attractive design as well as search engine optimization for better online visibility.
+                            </li>
+                            <li>Laid out robust web applications using Bootstrap, HTML, and Vanilla JS, providing solid structures and interactive designs for a variety of web projects.
+                            </li>
+                            <li>IConducted maintenance and updates for e-commerce websites, focusing on continuous improvement in functionality, security, and user experience, ensuring optimal performance and smooth navigation for customers.
                             </li>
                         </ul>
                     </div>
