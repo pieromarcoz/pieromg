@@ -240,7 +240,7 @@ export default function Home() {
                             <div className="flex flex-col gap-2.5 justify-center">
                                 <h3 className="font-bold text-3xl text-slate-800 dark:text-white">Digital Marketplace</h3>
                                 <p className="text-slate-600 dark:text-slate-300 text-lg line-clamp-3">
-                                He desarrollado "DigitalHippo", un mercado de comercio electrónico fullstack de vanguardia exclusivamente para productos digitales. Esta plataforma está meticulosamente elaborada utilizando el último enrutador de aplicaciones Next.js 14, complementado con tRPC, TypeScript, Payload y Tailwind para una experiencia de usuario fluida y de alto rendimiento.
+                                He desarrollado "DigitalHippo", un ecommerce fullstack de vanguardia exclusivamente para productos digitales. Esta plataforma está meticulosamente elaborada utilizando el último enrutador de aplicaciones Next.js 14, complementado con tRPC, TypeScript, Payload y Tailwind para una experiencia de usuario fluida y de alto rendimiento.
                                 </p>
                                 <div className="flex gap-2 items-center mb-1">
                                     <div className="relative group/tooltip">
