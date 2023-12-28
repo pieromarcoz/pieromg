@@ -18,10 +18,10 @@ export default function Layout({children}) {
             <Head>
                 <title>Piero MG | Portfolio</title>
             </Head>
-            <div className={'max-w-3xl mx-auto px-5 sm:px-0'}>
+            <body className={'max-w-3xl mx-auto px-5 sm:px-0'}>
                 {children}
                 <Analytics />
-            </div>
+            </body>
         </>
     );
 };
