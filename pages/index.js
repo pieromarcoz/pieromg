@@ -190,7 +190,7 @@ export default function Home() {
                             </li>
                             <li>Laid out robust web applications using Bootstrap, HTML, and Vanilla JS, providing solid structures and interactive designs for a variety of web projects.
                             </li>
-                            <li>IConducted maintenance and updates for e-commerce websites, focusing on continuous improvement in functionality, security, and user experience, ensuring optimal performance and smooth navigation for customers.
+                            <li>Conducted maintenance and updates for e-commerce websites, focusing on continuous improvement in functionality, security, and user experience, ensuring optimal performance and smooth navigation for customers.
                             </li>
                         </ul>
                     </div>
