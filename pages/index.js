@@ -220,6 +220,86 @@ export default function Home() {
                 <div className="flex flex-col gap-10">
                     <div className="grid gap-10">
                         <article className="grid gap-4 sm:gap-7 md:grid-cols-2 group">
+                            <a href="https://digital-marketplace-lake.vercel.app/" target="_blank" rel="noreferrer"
+                               className="block">
+                                {/*<div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
+                                    <Image src={'/img/landing-tesla.png'} width={350} height={225} alt={"Landing Tesla"}/>
+                                </div>*/}
+                                <div
+                                    className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
+                                    <span>
+                                        <Image
+                                            alt={"DigitalPoo"}
+                                            src="/img/digita.png"
+                                            width={350}
+                                            height={225}
+                                            className="rounded-lg duration-500 transition-all translate-x-9 translate-y-9 group-hover:translate-x-7 group-hover:translate-y-7 "/>
+                                    </span>
+                                </div>
+                            </a>
+                            <div className="flex flex-col gap-2.5 justify-center">
+                                <h3 className="font-bold text-3xl text-slate-800 dark:text-white">Digital Marketplace</h3>
+                                <p className="text-slate-600 dark:text-slate-300 text-lg line-clamp-3">
+                                He desarrollado "DigitalHippo", un mercado de comercio electrónico fullstack de vanguardia exclusivamente para productos digitales. Esta plataforma está meticulosamente elaborada utilizando el último enrutador de aplicaciones Next.js 14, complementado con tRPC, TypeScript, Payload y Tailwind para una experiencia de usuario fluida y de alto rendimiento.
+                                </p>
+                                <div className="flex gap-2 items-center mb-1">
+                                    <div className="relative group/tooltip">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  height="20" viewBox=".5 -.2 1023 1024.1" width="20"><path d="m478.5.6c-2.2.2-9.2.9-15.5 1.4-145.3 13.1-281.4 91.5-367.6 212-48 67-78.7 143-90.3 223.5-4.1 28.1-4.6 36.4-4.6 74.5s.5 46.4 4.6 74.5c27.8 192.1 164.5 353.5 349.9 413.3 33.2 10.7 68.2 18 108 22.4 15.5 1.7 82.5 1.7 98 0 68.7-7.6 126.9-24.6 184.3-53.9 8.8-4.5 10.5-5.7 9.3-6.7-.8-.6-38.3-50.9-83.3-111.7l-81.8-110.5-102.5-151.7c-56.4-83.4-102.8-151.6-103.2-151.6-.4-.1-.8 67.3-1 149.6-.3 144.1-.4 149.9-2.2 153.3-2.6 4.9-4.6 6.9-8.8 9.1-3.2 1.6-6 1.9-21.1 1.9h-17.3l-4.6-2.9c-3-1.9-5.2-4.4-6.7-7.3l-2.1-4.5.2-200.5.3-200.6 3.1-3.9c1.6-2.1 5-4.8 7.4-6.1 4.1-2 5.7-2.2 23-2.2 20.4 0 23.8.8 29.1 6.6 1.5 1.6 57 85.2 123.4 185.9s157.2 238.2 201.8 305.7l81 122.7 4.1-2.7c36.3-23.6 74.7-57.2 105.1-92.2 64.7-74.3 106.4-164.9 120.4-261.5 4.1-28.1 4.6-36.4 4.6-74.5s-.5-46.4-4.6-74.5c-27.8-192.1-164.5-353.5-349.9-413.3-32.7-10.6-67.5-17.9-106.5-22.3-9.6-1-75.7-2.1-84-1.3zm209.4 309.4c4.8 2.4 8.7 7 10.1 11.8.8 2.6 1 58.2.8 183.5l-.3 179.8-31.7-48.6-31.8-48.6v-130.7c0-84.5.4-132 1-134.3 1.6-5.6 5.1-10 9.9-12.6 4.1-2.1 5.6-2.3 21.3-2.3 14.8 0 17.4.2 20.7 2z"/><path d="m784.3 945.1c-3.5 2.2-4.6 3.7-1.5 2 2.2-1.3 5.8-4 5.2-4.1-.3 0-2 1-3.7 2.1zm-6.9 4.5c-1.8 1.4-1.8 1.5.4.4 1.2-.6 2.2-1.3 2.2-1.5 0-.8-.5-.6-2.6 1.1zm-5 3c-1.8 1.4-1.8 1.5.4.4 1.2-.6 2.2-1.3 2.2-1.5 0-.8-.5-.6-2.6 1.1zm-5 3c-1.8 1.4-1.8 1.5.4.4 1.2-.6 2.2-1.3 2.2-1.5 0-.8-.5-.6-2.6 1.1zm-7.6 4c-3.8 2-3.6 2.8.2.9 1.7-.9 3-1.8 3-2 0-.7-.1-.6-3.2 1.1z"/></svg>
+                                        <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Next JS</span>
+                                    </div>
+                                    <div className="relative group/tooltip">
+                                    <Image src={'https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg'} width={20} height={20}/>                               
+                                    <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">TypeScript</span>
+                                    </div>
+                                    <div className="relative group/tooltip">
+                                    <Image src={'https://trpc.io/img/logo.svg'} width={20} height={20}/>                               
+                                    <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">tRPC</span>
+                                    </div>
+                                    <div className="relative group/tooltip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 260 260" fill="none">
+                                        <path d="M120.59 8.5824L231.788 75.6142V202.829L148.039 251.418V124.203L36.7866 57.2249L120.59 8.5824Z" fill="black"/>
+                                        <path d="M112.123 244.353V145.073L28.2114 193.769L112.123 244.353Z" fill="black"/>
+                                    </svg>                                    
+                                    <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Payload</span>
+                                    </div>
+                                    <div className="relative group/tooltip">
+                                        <svg width="22" height="22" viewBox="0 0 55 33" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" className="w-7 h-6">
+                                            <path
+                                                d="M27.5 0C20.1667 0 15.5833 3.66667 13.75 11C16.5 7.33333 19.7083 5.95833 23.375 6.875C25.4673 7.3975 26.9615 8.91458 28.6183 10.5967C31.3156 13.3329 34.4346 16.5 41.25 16.5C48.5833 16.5 53.1667 12.8333 55 5.5C52.25 9.16667 49.0417 10.5417 45.375 9.625C43.2827 9.1025 41.7885 7.58542 40.1317 5.90333C37.4367 3.16708 34.3177 0 27.5 0ZM13.75 16.5C6.41667 16.5 1.83333 20.1667 0 27.5C2.75 23.8333 5.95833 22.4583 9.625 23.375C11.7173 23.8975 13.2115 25.4146 14.8683 27.0967C17.5656 29.8329 20.6846 33 27.5 33C34.8333 33 39.4167 29.3333 41.25 22C38.5 25.6667 35.2917 27.0417 31.625 26.125C29.5327 25.6025 28.0385 24.0854 26.3817 22.4033C23.6867 19.6671 20.5677 16.5 13.75 16.5V16.5Z"
+                                                fill="#19B5B9"></path>
+                                        </svg>
+                                        <span
+                                            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Tailwind</span>
+                                    </div>
+                                </div>
+                                <div className="flex justify-start gap-3">
+                                    <a href="https://digital-marketplace-lake.vercel.app/" target="_blank"
+                                       rel="noreferrer"
+                                       className="flex gap-3 group/live hover:gap-6 transition-[gap] items-center text-lg py-2 px-5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-lg">
+                                        Live
+                                        <div
+                                            className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                 fill="currentColor"
+                                                 viewBox="0 0 640 512">
+                                                <path className="fa-primary"
+                                                      d="M256 96C273.7 96 288 110.3 288 128C288 145.7 273.7 160 256 160H160C106.1 160 64 202.1 64 256C64 309 106.1 352 160 352H256C273.7 352 288 366.3 288 384C288 401.7 273.7 416 256 416H160C71.63 416 0 344.4 0 256C0 167.6 71.63 96 160 96H256zM480 96C568.4 96 640 167.6 640 256C640 344.4 568.4 416 480 416H384C366.3 416 352 401.7 352 384C352 366.3 366.3 352 384 352H480C533 352 576 309 576 256C576 202.1 533 160 480 160H384C366.3 160 352 145.7 352 128C352 110.3 366.3 96 384 96H480z"/>
+                                                <path className="fa-secondary"
+                                                      d="M192 256C192 238.3 206.3 224 224 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H224C206.3 288 192 273.7 192 256z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div className="grid gap-10">
+                        <article className="grid gap-4 sm:gap-7 md:grid-cols-2 group">
                             <a href="https://velvety-daifuku-ad4dfc.netlify.app/" target="_blank" rel="noreferrer"
                                className="block">
                                 {/*<div className="relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
